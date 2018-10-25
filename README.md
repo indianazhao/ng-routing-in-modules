@@ -9,28 +9,28 @@ It was generated with [Angular CLI](https://github.com/angular/angular-cli) vers
 
 ## File Structure
 ```
-├─ app-routing.module.ts
-├─ app.component.ts
-├─ app.component.html
-├─ app.module.ts
-├─ [first]
+├─ app-routing.module.ts
+├─ app.component.ts
+├─ app.component.html
+├─ app.module.ts
+├─ [first]
 │  ├─ first-routing.module.ts
 │  ├─ first.module.ts
-│  ├─ [main]
-│  │  ├─ main.component.html
-│  │  └─ main.component.ts
+│  ├─ [main]
+│  │  ├─ main.component.html
+│  │  └─ main.component.ts
 │  ├─ [one]
 │  │  ├─ one.component.html
 │  │  └─ one.component.ts
 │  └─ [two]
 │     ├─ two.component.html
 │     └─ two.component.ts
-└─ [second]
+└─ [second]
     ├─ second-routing.module.ts
     ├─ second.module.ts
-    ├─ [main]
-    │  ├─ main.component.html
-    │  └─ main.component.ts
+    ├─ [main]
+    │  ├─ main.component.html
+    │  └─ main.component.ts
     ├─ [one]
     │  ├─ one.component.html
     │  └─ one.component.ts
