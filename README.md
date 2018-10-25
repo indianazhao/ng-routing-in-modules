@@ -1,27 +1,48 @@
-# NgRoutingInModules
+# Angular example - Routing in multiple modules
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This project shows how the routing works between App and child modules.
+It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![](demo.gif)
 
-## Code scaffolding
+## File Structure
+```
+├─ app-routing.module.ts
+├─ app.component.ts
+├─ app.component.html
+├─ app.module.ts
+├─ [first]
+│  ├─ first-routing.module.ts
+│  ├─ first.module.ts
+│  ├─ [main]
+│  │  ├─ main.component.html
+│  │  └─ main.component.ts
+│  ├─ [one]
+│  │  ├─ one.component.html
+│  │  └─ one.component.ts
+│  └─ [two]
+│     ├─ two.component.html
+│     └─ two.component.ts
+└─ [second]
+    ├─ second-routing.module.ts
+    ├─ second.module.ts
+    ├─ [main]
+    │  ├─ main.component.html
+    │  └─ main.component.ts
+    ├─ [one]
+    │  ├─ one.component.html
+    │  └─ one.component.ts
+    └─ [two]
+      ├─ two.component.html
+      └─ two.component.ts
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Install
 
-## Build
+Run `npm install` for node modules.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Run
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
