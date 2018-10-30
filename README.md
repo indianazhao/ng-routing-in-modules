@@ -16,34 +16,57 @@ This demo project is here for two purposes:
 
 ## Files Structure for Routing Demo
 ```
-├─ app-routing.module.ts
-├─ app.component.ts
-├─ app.component.html
-├─ app.module.ts
-├─ [first]
-│  ├─ first-routing.module.ts
-│  ├─ first.module.ts
-│  ├─ [main]
-│  │  ├─ main.component.html
-│  │  └─ main.component.ts
-│  ├─ [one]
-│  │  ├─ one.component.html
-│  │  └─ one.component.ts
-│  └─ [two]
-│     ├─ two.component.html
-│     └─ two.component.ts
-└─ [second]
-    ├─ second-routing.module.ts
-    ├─ second.module.ts
-    ├─ [main]
-    │  ├─ main.component.html
-    │  └─ main.component.ts
-    ├─ [one]
-    │  ├─ one.component.html
-    │  └─ one.component.ts
-    └─ [two]
-       ├─ two.component.html
-       └─ two.component.ts
+├─ [app]
+│   ├─ [login]
+│   │   ├─ login.component.html
+│   │   └─ login.component.ts
+│   ├─ [main]
+│   │   ├─ main-routing.module.html
+│   │   ├─ main.component.html
+│   │   ├─ main.component.ts
+│   │   └─ main.module.ts
+│   ├─ app-routing.module.ts
+│   ├─ app.component.ts
+│   ├─ app.component.html
+│   ├─ app.module.ts
+├─ [app2]
+│   ├─ [login]
+│   │   ├─ login.component.html
+│   │   └─ login.component.ts
+│   ├─ [main]
+│   │   ├─ main-routing.module.html
+│   │   ├─ main.component.html
+│   │   ├─ main.component.ts
+│   │   └─ main.module.ts
+│   ├─ app-routing.module.ts
+│   ├─ app.component.ts
+│   ├─ app.component.html
+│   ├─ app.module.ts
+└─ [modules]
+    ├─ [first]
+    │   ├─ first-routing.module.ts
+    │   ├─ first.module.ts
+    │   ├─ [main]
+    │   │   ├─ main-first.component.html
+    │   │   └─ main-first.component.ts
+    │   ├─ [one]
+    │   │   ├─ first-one.component.html
+    │   │   └─ first-one.component.ts
+    │   └─ [two]
+    │       ├─ first-two.component.html
+    │       └─ first-two.component.ts
+    └─ [second]
+        ├─ second-routing.module.ts
+        ├─ second.module.ts
+        ├─ [main]
+        │   ├─ main-second.component.html
+        │   └─ main-second.component.ts
+        ├─ [one]
+        │   ├─ second-one.component.html
+        │   └─ second-one.component.ts
+        └─ [two]
+            ├─ second-two.component.html
+            └─ second-two.component.ts
 ```
 
 ## Install
@@ -52,21 +75,21 @@ Run `npm install` for node modules.
 
 ## Run
 
-### 1. 'Routing in multiple modules'
+### 1. Routing in multiple modules
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
-### 2. 'ng build for different application'
+### 2. ng build for different application
 
 Run `ng serve --project="app2"` for a dev server with another application has no module 'first'.
 
 ## Build
 
-### 1. 'Routing in multiple modules'
+### 1. Routing in multiple modules
 
 Run `ng build` to generate built bundle in the folder 'dist/ng-routing-in-modules/'.
 
-### 2. 'ng build for different application'
+### 2. ng build for different application
 
 * Run `ng build --project="app2"`, or
 * Run `ng build --main src/main2.ts --output-path dist/app2` to generate built bundle in folder 'dist/app2/'.
