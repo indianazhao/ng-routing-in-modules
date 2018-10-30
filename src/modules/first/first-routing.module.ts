@@ -6,13 +6,11 @@ import { FirstTwoComponent } from './two/first-two.component';
 import { FirstOneComponent } from './one/first-one.component';
 
 const firstRoutes: Routes = [
-  { path: 'first', component: MainFirstComponent, children: [
-    { path: '', component: FirstOneComponent},
-    { path: 'one', component: FirstOneComponent},
-    { path: 'two', component: FirstTwoComponent},
+  { path: '', component: MainFirstComponent, children: [  // <-- lazyload
+    { path: '', redirectTo: 'one', pathMatch: 'full' },
+    { path: 'one', component: FirstOneComponent },
+    { path: 'two', component: FirstTwoComponent },
   ]}
-  // { path: 'first/one', component: FirstOneComponent },
-  // { path: 'first/two', component: FirstTwoComponent }
 ];
 
 @NgModule({
